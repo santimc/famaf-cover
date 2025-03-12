@@ -20,19 +20,19 @@
 
 \newcommand*{\carrera}[1]{%
   \ifstrequal{#1}{computacion}{%
-    \gdef\@carrera{Ciencias de la Computación}%
+    \gdef\@carrera{Ciencias de la Computación }%
   }{%
   \ifstrequal{#1}{astronomia}{%
-    \gdef\@carrera{Astronomía}%
+    \gdef\@carrera{Astronomía }%
   }{%
   \ifstrequal{#1}{fisica}{%
-    \gdef\@carrera{Física}%
+    \gdef\@carrera{Física }%
   }{%
   \ifstrequal{#1}{matematica}{%
-    \gdef\@carrera{Matemática}%
+    \gdef\@carrera{Matemática }%
   }{%
   \ifstrequal{#1}{matematicaaplicada}{%
-    \gdef\@carrera{Matemática Aplicada}%
+    \gdef\@carrera{Matemática Aplicada }%
   }{%
     % Fallback: use the argument as part of the title.
     \gdef\@carrera{Licenciado en #1}%
