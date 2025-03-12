@@ -1,0 +1,55 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{famafCover}
+\usepackage[
+backend=biber,
+style=numeric,
+]{biblatex} % To add citations
+\addbibresource{example_citations.bib}
+
+\carrera{computacion}
+\title{El titulo!!!}
+\author{Nombre/s Apellido/s}
+\date{MES, AÑO} % mes y año de la presentación
+\supervisors{Directora1 \and Director2} % si tenés más de un director separarlos con \and y el paquete lso pone en diferentes lineas como está estipulado
+
+\begin{document}
+
+\maketitle
+
+\section*{Resumen}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus libero felis, placerat ac nisi ut, porta pretium risus. Praesent finibus, mi eget cursus tincidunt, nibh purus consequat augue, ut laoreet felis sem et ex. In augue augue, dapibus vel orci sit amet, tincidunt aliquet felis. Maecenas sollicitudin facilisis odio. Praesent luctus lectus ante, in sagittis nisi blandit sit amet. Suspendisse placerat porttitor mauris. Nam vulputate iaculis enim, sed laoreet risus accumsan sed.
+
+\section*{Abstract (lo mismo pero en inglés)}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus libero felis, placerat ac nisi ut, porta pretium risus. Praesent finibus, mi eget cursus tincidunt, nibh purus consequat augue, ut laoreet felis sem et ex. In augue augue, dapibus vel orci sit amet, tincidunt aliquet felis. Maecenas sollicitudin facilisis odio. Praesent luctus lectus ante, in sagittis nisi blandit sit amet. Suspendisse placerat porttitor mauris. Nam vulputate iaculis enim, sed laoreet risus accumsan sed.
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\section{Introduction}
+
+Nam vel luctus dui, id cursus erat. Aenean ac magna efficitur, mollis nibh in, scelerisque velit. Ut ac magna odio. Integer vitae mollis ligula. Ut tincidunt ipsum dui, eu vestibulum leo posuere quis. Etiam at augue lacinia, scelerisque mi sit amet, efficitur lectus. Etiam non bibendum elit, vitae eleifend libero. Aliquam euismod, mi et ullamcorper scelerisque, ante magna blandit lorem, dictum efficitur nisl diam ac magna. Integer laoreet commodo volutpat. Morbi ultricies quam nunc, in iaculis elit convallis et. Sed congue consequat nisi quis fringilla. Cras ac neque ac arcu lacinia imperdiet ut non sem.
+
+\section{Una Sección}
+
+Ejemplo de cita\cite{turing1936a}
+
+\subsection{Ejemplo Subsección}
+
+Ejemplo citar web\cite{famaf-cover}
+
+Curabitur id viverra quam. Maecenas ut molestie risus. Proin id lorem sit amet massa sollicitudin facilisis eu a risus. Mauris at nibh porta, consectetur nisl ut, malesuada velit. Duis est orci, tempus ut quam non, posuere placerat augue. Etiam rhoncus odio sed tortor luctus, eu semper lectus luctus. Aliquam erat volutpat. Pellentesque sit amet lorem eu lectus pretium consequat vitae et lectus. Aliquam in bibendum ante, ut aliquet enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In mattis nibh non enim rhoncus ultricies. Aenean et ante eget dui rutrum posuere. Fusce et augue venenatis, commodo libero non, posuere sem.
+
+\section{Conclusión}
+
+La unica debilidad del trabajor es que es demasiado bueno y puede impresionar al lector.
+
+\subsection{Trabajo Futuro}
+
+La paz mundial.
+
+\printbibliography
+
+\end{document}

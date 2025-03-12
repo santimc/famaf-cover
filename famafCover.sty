@@ -1,0 +1,102 @@
+\ProvidesPackage{famafCover}[2025/03/12 v.01]
+\RequirePackage{graphicx} % Required for inserting images
+\RequirePackage{ccicons} % to add cc logo
+\RequirePackage{hyperref} % To add links
+
+\newcommand*{\supervisor}[1]{\gdef\@supervisor{#1}%
+}
+
+\def\default@supervisor{supervisor not set. Por favor.}
+% Initially set @supervisor to the default
+\def\@supervisor{\default@supervisor}
+
+% Single command to list all supervisors, using \and for line breaks
+\newcommand*{\supervisors}[1]{%
+  \renewcommand{\and}{\\}% Redefine \and to be a line break
+  \gdef\@supervisor{#1}%
+}
+
+\def\@carrera{Licenciado en (setear carrera)} % Default career title
+
+\newcommand*{\carrera}[1]{%
+  \ifstrequal{#1}{computacion}{%
+    \gdef\@carrera{Ciencias de la Computación}%
+  }{%
+  \ifstrequal{#1}{astronomia}{%
+    \gdef\@carrera{Astronomía}%
+  }{%
+  \ifstrequal{#1}{fisica}{%
+    \gdef\@carrera{Física}%
+  }{%
+  \ifstrequal{#1}{matematica}{%
+    \gdef\@carrera{Matemática}%
+  }{%
+  \ifstrequal{#1}{matematicaaplicada}{%
+    \gdef\@carrera{Matemática Aplicada}%
+  }{%
+    % Fallback: use the argument as part of the title.
+    \gdef\@carrera{Licenciado en #1}%
+  }}}}}%
+}
+
+\renewcommand*{\maketitle}{%
+\begin{titlepage}
+\begin{center}
+  \thispagestyle{empty} % Eliminar el número de página
+
+  \vspace{0.5cm}
+
+  \begin{minipage}[t]{\textwidth}
+      \raggedright
+      \includegraphics[height=1.7cm]{logos/unc.png} % Left logo inside margins
+      \hfill
+      \includegraphics[height=1.7cm]{logos/famaf.png} % Right logo inside margins
+  \end{minipage}
+
+  \vspace{3cm} % Space below the logos before the rest of the content
+
+  \begin{huge}
+    \textbf{\@title}
+  \end{huge}
+
+  \vspace{0.3cm}
+
+  por
+
+  {\Large\@author}
+
+  \vspace{2cm}
+
+  Presentado ante la FACULTAD DE MATEMÁTICA, ASTRONOMÍA, FÍSICA Y COMPUTACIÓN como parte de los requerimientos para la obtención del grado de Licenciado en \@carrera de la
+
+  \
+
+  UNIVERSIDAD NACIONAL DE CÓRDOBA
+
+  \
+
+  {\@date}
+
+  \
+
+  \
+
+  \begin{large}
+    Directores:
+
+    \@supervisor
+
+  \end{large}
+
+
+  \vfill
+
+
+  Este trabajo se distribuye bajo una licencia \href{https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1}{Creative Commons Atribución 4.0 Internacional} \ccby
+
+  \vspace{0.5cm}
+\end{center}
+\newpage
+\end{titlepage}
+}
+\endinput
