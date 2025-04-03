@@ -3,8 +3,8 @@
 \usepackage{famafCover}
 \usepackage[spanish, es-tabla]{babel} % soporte para lenguaje español
 \usepackage[
-backend=biber,
-style=numeric,
+    backend=biber,
+    style=numeric,
 ]{biblatex} % To add citations
 \addbibresource{example_citations.bib}
 
@@ -16,41 +16,40 @@ style=numeric,
 
 \begin{document}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Título
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \maketitle
 
-\section*{Resumen}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abstract
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus libero felis, placerat ac nisi ut, porta pretium risus. Praesent finibus, mi eget cursus tincidunt, nibh purus consequat augue, ut laoreet felis sem et ex. In augue augue, dapibus vel orci sit amet, tincidunt aliquet felis. Maecenas sollicitudin facilisis odio. Praesent luctus lectus ante, in sagittis nisi blandit sit amet. Suspendisse placerat porttitor mauris. Nam vulputate iaculis enim, sed laoreet risus accumsan sed.
-
-\section*{Abstract (lo mismo pero en inglés)}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus libero felis, placerat ac nisi ut, porta pretium risus. Praesent finibus, mi eget cursus tincidunt, nibh purus consequat augue, ut laoreet felis sem et ex. In augue augue, dapibus vel orci sit amet, tincidunt aliquet felis. Maecenas sollicitudin facilisis odio. Praesent luctus lectus ante, in sagittis nisi blandit sit amet. Suspendisse placerat porttitor mauris. Nam vulputate iaculis enim, sed laoreet risus accumsan sed.
+\input{02_resumen/resumen}
+\input{02_resumen/abstract}
 
 \clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Índice
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \tableofcontents
+
 \clearpage
 
-\section{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Artículo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Nam vel luctus dui, id cursus erat. Aenean ac magna efficitur, mollis nibh in, scelerisque velit. Ut ac magna odio. Integer vitae mollis ligula. Ut tincidunt ipsum dui, eu vestibulum leo posuere quis. Etiam at augue lacinia, scelerisque mi sit amet, efficitur lectus. Etiam non bibendum elit, vitae eleifend libero. Aliquam euismod, mi et ullamcorper scelerisque, ante magna blandit lorem, dictum efficitur nisl diam ac magna. Integer laoreet commodo volutpat. Morbi ultricies quam nunc, in iaculis elit convallis et. Sed congue consequat nisi quis fringilla. Cras ac neque ac arcu lacinia imperdiet ut non sem.
+\input{03_intro/intro}
+\input{04_ejemplosect/sect}
+\input{05_conclusiones/conclusiones}
 
-\section{Una Sección}
-
-Ejemplo de cita\cite{turing1936a}
-
-\subsection{Ejemplo Subsección}
-
-Ejemplo citar web\cite{famaf-cover}
-
-Curabitur id viverra quam. Maecenas ut molestie risus. Proin id lorem sit amet massa sollicitudin facilisis eu a risus. Mauris at nibh porta, consectetur nisl ut, malesuada velit. Duis est orci, tempus ut quam non, posuere placerat augue. Etiam rhoncus odio sed tortor luctus, eu semper lectus luctus. Aliquam erat volutpat. Pellentesque sit amet lorem eu lectus pretium consequat vitae et lectus. Aliquam in bibendum ante, ut aliquet enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In mattis nibh non enim rhoncus ultricies. Aenean et ante eget dui rutrum posuere. Fusce et augue venenatis, commodo libero non, posuere sem.
-
-\section{Conclusión}
-
-La unica debilidad del trabajor es que es demasiado bueno y puede impresionar al lector.
-
-\subsection{Trabajo Futuro}
-
-La paz mundial.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliografía
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \printbibliography
 
