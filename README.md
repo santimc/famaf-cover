@@ -17,6 +17,10 @@ En artículos nuevos, se puede clonar/forkear el repositorio para uso offline, o
 
 En artículos existentes lo más conveniente sería incorporar `famafCover.sty` junto con el directorio `logos` al proyecto, revisar el ejemplo de uso en `main.tex`.
 
+### Pequeña nota si se quiere usar memoir
+
+Si se quiere usar *memoir* en vez de *article*, se debe cambiar la `titlepage` en `famafCover.sty` por `titlingpage`
+
 ## Algunos links utiles
 
 Los logos fueron obtenidos de:
