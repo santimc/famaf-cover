@@ -21,6 +21,30 @@ En artículos existentes lo más conveniente sería incorporar `famafCover.sty` 
 
 Si se quiere usar *memoir* en vez de *article*, se debe cambiar la `titlepage` en `famafCover.sty` por `titlingpage`
 
+### Si se quiere usar las fuentes correctas
+
+En linux seguramente tengas que instalar las fuentes, en Ubuntu el paquete es:
+
+```sh
+sudo apt install ttf-mscorefonts-installer
+```
+
+Para Arial
+```tex
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Arial} % Times New Roman Nimbus Roman
+\setsansfont[Ligatures=TeX]{Arial} % Times New Roman
+\setmonofont{Arial} % Times New Roman
+```
+
+Para Times New Roman
+```tex
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Times New Roman}
+\setsansfont[Ligatures=TeX]{Times New Roman}
+\setmonofont{Times New Roman}
+```
+
 ## Algunos links utiles
 
 Los logos fueron obtenidos de:
