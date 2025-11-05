@@ -53,3 +53,14 @@ Los logos fueron obtenidos de:
 - [FAMAF](https://www.famaf.unc.edu.ar/la-facultad/institucional/secretar%C3%ADas/prosecretar%C3%ADa-de-comunicaci%C3%B3n-y-divulgaci%C3%B3n-cient%C3%ADfica/)
 
 [Ejemplos de Trabajos Especiales de Computación](https://rdu.unc.edu.ar/handle/11086/16727?type=dateissued).
+
+[Elegí la licencia que quieras para tu trabajo](https://creativecommons.org/chooser/). Deberías cambiar también los iconos en la carátula.
+
+### Alternativas
+
+A lo largo del tiempo, al parecer, ya varias personas intentaron hacer algo parecido a lo de este repositorio.
+Acá se intenta recopilar estos.
+
+- [Un overleaf que usan alumnos de Juan Bautista Cabral](https://www.overleaf.com/read/kvcjcgwsmjqt#a97adf)
+- [Un repo del CEIMAF](https://gitlab.com/famaf_ceimaf/plantilla-trabajo-especial)
+- [Un repo de Dionisio E. Alonso](https://gitlab.com/idbhv/idefbehav/-/tree/master/docs/famaf_thesis)
